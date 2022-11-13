@@ -1,0 +1,30 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  width: 1600px;
+  height: 80px;
+}
+
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.logo-left-side {
+  color: rgba(33, 150, 243, 1);
+}
+
+.logo-right-side {
+  color: rgb(0, 0, 1);
+}
+
+.navigation-list {
+  list-style: none;
+}
+.navigation-bar,
+.navigation-item {
+  display: inline-block;
+}
