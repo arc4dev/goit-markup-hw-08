@@ -1,30 +1,115 @@
-body {
-  font-family: Roboto, sans-serif;
+/* GLOBAL VARIABLES */
+:root {
+  --brand-color: rgba(33, 150, 243, 1);
+  --base-text-color: rgba(33, 33, 33, 1);
+  --description-color: rgba(117, 117, 117, 1);
+  --secondary-text-color: rgba(255, 255, 255, 1);
+  --contact-text-color: rgba(117, 117, 117, 1);
+  --secondary-background-color: rgba(47, 48, 58, 1);
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--base-text-color);
+  margin: 0;
+}
+
+/* COMMON STYLES */
+.header ul,
+.main-description-list ul {
+  list-style: none;
+}
+
+.header a,
+.footer a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HEADER STYLES */
 .header {
   width: 1600px;
   height: 80px;
 }
 
+/* HEADER STYLES - LOGO */
 .logo {
   font-family: Raleway;
   font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .logo-left-side {
-  color: rgba(33, 150, 243, 1);
+  color: var(--brand-color);
 }
 
 .logo-right-side {
   color: rgb(0, 0, 1);
 }
 
-.navigation-list {
-  list-style: none;
+/* HEADER STYLES - NAVBAR */
+.navigation-bar a {
+  color: var(--base-text-color);
 }
-.navigation-bar,
-.navigation-item {
+
+.hover-effect a:hover,
+.hover-effect a:focus {
+  color: var(--brand-color);
+}
+
+/* HEADER STYLES - CONTACT LIST */
+.contact-list a {
+  color: var(--contact-text-color);
+}
+
+/* COMMON HEADER STYLES */
+.navigation-bar a,
+.contact-list a {
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.contact-list,
+.contact-list li {
   display: inline-block;
+}
+
+.navigation-bar,
+.navigation-bar li {
+  display: inline-block;
+}
+
+/* MAIN HEADER STYLES */
+.main-header {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--secondary-background-color);
+  margin-left: 0;
+}
+
+.main-header h1 {
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.main-header button {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--brand-color);
+  padding: 10px 41px 10px 42px;
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
