@@ -7,6 +7,7 @@
   --lighter-secondary-text-color: rgba(255, 255, 255, 0.6);
   --contact-text-color: rgba(117, 117, 117, 1);
   --secondary-background-color: rgba(47, 48, 58, 1);
+  --button-background-color: rgba(245, 244, 250, 1);
 }
 
 body {
@@ -18,13 +19,14 @@ body {
 /* COMMON STYLES */
 .navigation-list,
 .contact-list,
-.main-description-list {
+.main-description-list,
+.portfolio-list {
   list-style: none;
 }
 
 .navigation-a,
 .contact-a,
-.footer a {
+.footer-contact-element {
   text-decoration: none;
   font-size: 14px;
 }
@@ -39,7 +41,7 @@ body {
 .logo {
   font-family: Raleway;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -61,8 +63,8 @@ body {
   color: var(--base-text-color);
 }
 
-.hover-effect a:hover,
-.hover-effect a:focus {
+.hover-effect:hover,
+.hover-effect:focus {
   color: var(--brand-color);
 }
 
@@ -74,7 +76,7 @@ body {
 /* COMMON HEADER STYLES */
 .navigation-a,
 .contact-a {
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
 }
@@ -100,7 +102,7 @@ body {
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   margin-top: 0;
 }
@@ -109,7 +111,7 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--brand-color);
@@ -139,13 +141,13 @@ body {
 
 .main-description-h3 {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
 .main-description {
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contact-text-color);
 }
@@ -158,7 +160,7 @@ body {
 
 .services-h2 {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
@@ -178,7 +180,7 @@ body {
 
 .team-h2 {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
@@ -203,12 +205,12 @@ body {
 
 .team-member-name {
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
 .team-member-role {
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
@@ -220,7 +222,7 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.footer-address {
+.footer-address-section {
   width: 246px;
   height: 81px;
 }
@@ -228,13 +230,97 @@ body {
 .address {
   color: var(--secondary-text-color);
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .footer-contact-element {
-  font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--lighter-secondary-text-color);
+}
+
+/*
+------------|
+  PORTFOLIO 
+   STYLES     
+     🎨          
+------------|
+*/
+
+/* BUTTON-FILTER STYLES */
+
+.button-filter-section {
+  width: 572px;
+  height: 54px;
+}
+
+.button-filter-list {
+  width: 100%;
+  height: 100%;
+}
+
+.button-filter-list-element {
+  display: inline-block;
+}
+
+.button-filter {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-style: none;
+  color: var(--base-text-color);
+  background-color: var(--button-background-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+/* PORTFOLIO STYLES */
+
+.portfolio-section {
+  width: 1170px;
+  height: 1360px;
+}
+
+.portfolio-list {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-list-element {
+  width: 370px;
+  height: 404px;
+  display: inline-block;
+}
+
+.portfolio-bg {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--base-text-color);
+}
+
+.portfolio-project-type {
+  font-size: 16px;
+  font-size: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--contact-text-color);
 }

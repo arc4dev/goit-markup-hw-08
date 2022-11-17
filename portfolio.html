@@ -14,43 +14,74 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <a href="index.html">WebStudio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Agencja</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="logo" href="index.html"
+        ><span class="logo logo-left-side">Web</span
+        ><span class="logo logo-right-side">Studio</span></a
+      >
+      <nav class="navigation-bar">
+        <ul class="navigation-list">
+          <li class="navigation-element">
+            <a class="navigation-a hover-effect" href="#">Agencja</a>
+          </li>
+
+          <li class="navigation-element">
+            <a class="navigation-a hover-effect" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+
+          <li class="navigation-element">
+            <a class="navigation-a hover-effect" href="#">Kontakt</a>
+          </li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+48111111111">+48 111 111 111</a>
-    </header>
+      <ul class="contact-list">
+        <li class="contact-element">
+          <a class="contact-a hover-effect" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
 
+        <li class="contact-element">
+          <a class="contact-a hover-effect" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+      </ul>
+    </header>
+    <!-- MAIN SECTION -->
     <main>
-      <section>
-        <ul>
-          <li>
-            <button type="buton">Wszystkie</button>
+      <!-- Button-filter section -->
+      <section class="button-filter-section">
+        <ul class="button-filter-list">
+          <li class="button-filter-list-element">
+            <button class="button-filter" type="buton">Wszystkie</button>
           </li>
-          <li>
-            <button type="buton">Strony</button>
+
+          <li class="button-filter-list-element">
+            <button class="button-filter" type="buton">Strony</button>
           </li>
-          <li>
-            <button type="buton">Aplikacje</button>
+
+          <li class="button-filter-list-element">
+            <button class="button-filter" type="buton">Aplikacje</button>
           </li>
-          <li>
-            <button type="buton">Dizajn</button>
+
+          <li class="button-filter-list-element">
+            <button class="button-filter" type="buton">Dizajn</button>
           </li>
-          <li>
-            <button type="buton">Marketing</button>
+
+          <li class="button-filter-list-element">
+            <button class="button-filter" type="buton">Marketing</button>
           </li>
         </ul>
       </section>
-      <section>
-        <ul>
-          <li>
-            <figure>
+      <!-- Portfolio section -->
+      <section class="portfolio-section">
+        <ul class="portfolio-list">
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/website-technocrack.jpg"
                 alt="laptop ze strona internetową"
@@ -58,14 +89,14 @@
                 height="294"
               />
               <figcaption>
-                <div>Technocrack</div>
-                <div>Strona internetowa</div>
+                <div class="portfolio-project-title">Technocrack</div>
+                <div class="portfolio-project-type">Strona internetowa</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/design-nba.jpg"
                 alt="walka o piłke - koszykówka"
@@ -73,14 +104,16 @@
                 height="294"
               />
               <figcaption>
-                <div>Grafika New Orlean vs Golden Star</div>
-                <div>Dizajn</div>
+                <div class="portfolio-project-title">
+                  Grafika New Orlean vs Golden Star
+                </div>
+                <div class="portfolio-project-type">Dizajn</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/app-seafood.jpg"
                 alt="logo restauracji"
@@ -88,14 +121,14 @@
                 height="294"
               />
               <figcaption>
-                <div>Restauracja Seafood</div>
-                <div>Aplikacja</div>
+                <div class="portfolio-project-title">Restauracja Seafood</div>
+                <div class="portfolio-project-type">Aplikacja</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/marketing-prime.jpg"
                 alt="słuchawka"
@@ -103,14 +136,14 @@
                 height="294"
               />
               <figcaption>
-                <div>Projekt Prime</div>
-                <div>Marketing</div>
+                <div class="portfolio-project-title">Projekt Prime</div>
+                <div class="portfolio-project-type">Marketing</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/app-boxes.jpg"
                 alt="dwa pudełka"
@@ -118,14 +151,14 @@
                 height="294"
               />
               <figcaption>
-                <div>Projekt Boxes</div>
-                <div>Aplikacja</div>
+                <div class="portfolio-project-title">Projekt Boxes</div>
+                <div class="portfolio-project-type">Aplikacja</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/website-inspiration.jpg"
                 alt="monitor ze strona internetową"
@@ -133,14 +166,16 @@
                 height="294"
               />
               <figcaption>
-                <div>Inspiration has no Borders</div>
-                <div>Strona internetowa</div>
+                <div class="portfolio-project-title">
+                  Inspiration has no Borders
+                </div>
+                <div class="portfolio-project-type">Strona internetowa</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/design-magazine.jpg"
                 alt="magazyn"
@@ -148,14 +183,16 @@
                 height="294"
               />
               <figcaption>
-                <div>Magazyn Limited Edition</div>
-                <div>Dizajn</div>
+                <div class="portfolio-project-title">
+                  Magazyn Limited Edition
+                </div>
+                <div class="portfolio-project-type">Dizajn</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/marketing-lab.jpg"
                 alt="etykieta"
@@ -163,14 +200,14 @@
                 height="294"
               />
               <figcaption>
-                <div>Projekt LAB</div>
-                <div>Marketing</div>
+                <div class="portfolio-project-title">Projekt LAB</div>
+                <div class="portfolio-project-type">Marketing</div>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="portfolio-list-element">
+            <figure class="portfolio-bg">
               <img
                 src="images/portfolio/app-business.jpg"
                 alt="laptop z aplikacją"
@@ -178,8 +215,8 @@
                 height="294"
               />
               <figcaption>
-                <div>Growing Business</div>
-                <div>Aplikacja</div>
+                <div class="portfolio-project-title">Growing Business</div>
+                <div class="portfolio-project-type">Aplikacja</div>
               </figcaption>
             </figure>
           </li>
@@ -187,13 +224,22 @@
       </section>
     </main>
 
-    <footer id="contact">
-      <a href="index.html">WebStudio</a>
-      <address>
-        m. Warszawa, Aleje Jerozolimskie 21 <br />
-        <a href="mailto:info@devstudio.com">info@example.com</a>
+    <!-- Footer -->
+    <footer class="footer">
+      <a class="logo" href="index.html"
+        ><span class="logo logo-left-side">Web</span
+        ><span class="logo logo-right-side2">Studio</span></a
+      >
+      <address class="footer-address-section">
+        <span class="address">m. Warszawa, Aleje Jerozolimskie 21 </span>
         <br />
-        <a href="tel:+48111111111">+48 111 111 111</a>
+        <a class="footer-contact-element" href="mailto:info@devstudio.com"
+          >info@example.com</a
+        >
+        <br />
+        <a class="footer-contact-element" href="tel:+48111111111"
+          >+48 111 111 111</a
+        >
       </address>
     </footer>
   </body>
