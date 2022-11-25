@@ -35,6 +35,9 @@ body {
 .header {
   width: 1600px;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* HEADER STYLES - LOGO */
@@ -81,14 +84,15 @@ body {
   font-weight: 500;
 }
 
-.contact-list,
-.contact-element {
-  display: inline-block;
+.contact-list {
+  display: flex;
+  gap: 50px;
+  padding: 0;
 }
 
-.navigation-bar,
-.navigation-element {
-  display: inline-block;
+.navigation-list {
+  display: flex;
+  gap: 46px;
 }
 
 /* MAIN HEADER STYLES */
@@ -176,6 +180,7 @@ body {
 .team-section {
   width: 1600px;
   height: 648px;
+  background-color: rgba(245, 244, 250, 1);
 }
 
 .team-h2 {
@@ -239,7 +244,7 @@ body {
 .footer-contact-element {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--lighter-secondary-text-color);
+  color: var (--lighter-secondary-text-color);
 }
 
 /*
