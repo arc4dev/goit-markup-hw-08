@@ -16,11 +16,27 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
 /* COMMON STYLES */
 .navigation-list,
 .contact-list,
+.portfolio-list,
 .main-description-list,
-.portfolio-list {
+.services-list,
+.button-filter-list {
   list-style: none;
 }
 
@@ -31,13 +47,18 @@ body {
   font-size: 0.875rem;
 }
 
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
 /* HEADER STYLES */
 .header {
-  width: 1600px;
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 24px 0px 25px;
+  border: 1px solid rgba(236, 236, 236, 1);
 }
 
 /* HEADER STYLES - LOGO */
@@ -77,6 +98,7 @@ body {
 }
 
 /* COMMON HEADER STYLES */
+
 .navigation-a,
 .contact-a {
   line-height: 1.14;
@@ -87,7 +109,6 @@ body {
 .contact-list {
   display: flex;
   gap: 50px;
-  padding: 0;
 }
 
 .navigation-list {
@@ -97,18 +118,23 @@ body {
 
 /* MAIN HEADER STYLES */
 .main-header-section {
-  width: 1600px;
-  height: 600px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--secondary-background-color);
 }
 
 .main-header-text {
+  width: 696px;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 2.75rem;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-top: 0;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .main-header-button {
@@ -128,76 +154,82 @@ body {
 
 /* MAIN DESCRIPTION STYLES */
 .main-description-section {
-  width: 1170px;
-  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-description-list {
   width: 1170px;
-  height: 101px;
+  display: flex;
+  gap: 30px;
 }
 
 .main-description-element {
-  width: 270px;
-  height: 101px;
-  display: inline-block;
+  min-width: 270px;
 }
 
 .main-description-h3 {
   font-size: 0.875rem;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
 
 .main-description {
   font-size: 0.875rem;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  min-height: 75px;
   color: var(--contact-text-color);
 }
 
 /* SERVICES STYLES */
 .services-section {
-  width: 1170px;
-  height: 386px;
+  min-height: 386px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services-h2 {
   font-size: 2.25rem;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .services-list {
-  list-style: none;
-}
-
-.services-element {
-  display: inline-block;
+  display: flex;
+  gap: 30px;
 }
 
 /* TEAM CARDS STYLES */
 .team-section {
-  width: 1600px;
-  height: 648px;
   background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-h2 {
   font-size: 2.25rem;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-list {
   width: 1170px;
-  height: 368px;
+  min-height: 368px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .team-card {
   width: 270px;
   height: 368px;
-  display: inline-block;
 }
 
 .card-background {
@@ -208,11 +240,16 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-member-info {
+  text-align: center;
+}
+
 .team-member-name {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin: 30px 0px 10px;
 }
 
 .team-member-role {
@@ -224,14 +261,24 @@ body {
 
 /* FOOTER STYLES */
 .footer {
-  width: 1600px;
-  height: 252px;
+  min-height: 252px;
   background-color: var(--secondary-background-color);
+}
+
+.footer-container {
+  margin-left: 215px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
 }
 
 .footer-address-section {
   width: 246px;
-  height: 81px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 30px;
 }
 
 .address {
@@ -244,7 +291,7 @@ body {
 .footer-contact-element {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var (--lighter-secondary-text-color);
+  color: var(--lighter-secondary-text-color);
 }
 
 /*
@@ -256,19 +303,9 @@ body {
 */
 
 /* BUTTON-FILTER STYLES */
-
-.button-filter-section {
-  width: 572px;
-  height: 54px;
-}
-
 .button-filter-list {
-  width: 100%;
-  height: 100%;
-}
-
-.button-filter-list-element {
-  display: inline-block;
+  width: 572px;
+  display: flex;
 }
 
 .button-filter {
@@ -294,11 +331,6 @@ body {
 }
 
 /* PORTFOLIO STYLES */
-
-.portfolio-section {
-  width: 1170px;
-  height: 1360px;
-}
 
 .portfolio-list {
   width: 100%;
