@@ -56,9 +56,9 @@ figure {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 24px 0px 25px;
-  border: 1px solid rgba(236, 236, 236, 1);
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 /* HEADER STYLES - LOGO */
@@ -114,6 +114,8 @@ figure {
 .navigation-list {
   display: flex;
   gap: 46px;
+  margin-left: 93px;
+  margin-right: 371px;
 }
 
 /* MAIN HEADER STYLES */
@@ -292,6 +294,12 @@ figure {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--lighter-secondary-text-color);
+  transition: 0.2s;
+}
+
+.footer-contact-element:hover,
+.footer-contact-element:focus {
+  text-decoration: underline;
 }
 
 /*
@@ -304,8 +312,10 @@ figure {
 
 /* BUTTON-FILTER STYLES */
 .button-filter-list {
-  width: 572px;
   display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 .button-filter {
@@ -333,15 +343,14 @@ figure {
 /* PORTFOLIO STYLES */
 
 .portfolio-list {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .portfolio-list-element {
-  width: 370px;
-  height: 404px;
-  display: inline-block;
+  min-width: 370px;
 }
 
 .portfolio-bg {
@@ -350,11 +359,16 @@ figure {
   border: 1px solid #eeeeee;
 }
 
+.portfolio-info {
+  margin: 20px 24px;
+}
+
 .portfolio-project-title {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--base-text-color);
 }
 
