@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-Second GO-IT homework :D
+https://arc4dev.github.io/goit-markup-hw-03/
