@@ -21,9 +21,9 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <!-- HEADER -->
-      <header class="header">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-container">
         <a class="logo" href="index.html"
           ><span class="logo logo-left-side">Web</span
           ><span class="logo logo-right-side">Studio</span>
@@ -40,11 +40,10 @@
             </li>
 
             <li class="navigation-element">
-              <a class="navigation-a hover-effect" href="#">Kontakt </a>
+              <a class="navigation-a hover-effect" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
-
         <ul class="contact-list">
           <li class="contact-element">
             <a class="contact-a hover-effect" href="mailto:info@devstudio.com"
@@ -56,12 +55,14 @@
             <a class="contact-a hover-effect" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
-      </header>
-      <!-- MAIN SECTION -->
-      <main>
-        <!-- Portfolio section -->
-        <section class="portfolio-section section">
-          <!-- Buttons -->
+      </div>
+    </header>
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- Portfolio section -->
+      <section class="portfolio-section section">
+        <!-- Buttons -->
+        <div class="container">
           <ul class="button-filter-list">
             <li class="button-filter-list-element">
               <button class="button-filter" type="buton">Wszystkie</button>
@@ -220,23 +221,23 @@
               </figure>
             </li>
           </ul>
-        </section>
-      </main>
-
-      <!-- Footer -->
-      <footer class="footer section">
-        <div class="footer-container">
-          <a class="logo" href="index.html"
-            ><span class="logo logo-left-side">Web</span
-            ><span class="logo logo-right-side2">Studio</span></a
-          >
-          <address class="footer-address-section">
-            <span class="address">m. Warszawa, Aleje Jerozolimskie 21 </span>
-            <a class="footer-contact-element" href="mailto:info@devstudio.com">info@example.com</a>
-            <a class="footer-contact-element" href="tel:+48111111111">+48 111 111 111</a>
-          </address>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer-container">
+        <a class="logo" href="index.html"
+          ><span class="logo logo-left-side">Web</span
+          ><span class="logo logo-right-side2">Studio</span></a
+        >
+        <address class="footer-address-section">
+          <span class="address">m. Warszawa, Aleje Jerozolimskie 21 </span>
+          <a class="footer-contact-element" href="mailto:info@devstudio.com">info@example.com</a>
+          <a class="footer-contact-element" href="tel:+48111111111">+48 111 111 111</a>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>
