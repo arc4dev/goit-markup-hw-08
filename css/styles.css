@@ -132,6 +132,10 @@ body {
   min-height: 600px;
   background-color: var(--secondary-background-color);
   display: flex;
+  background-image: url("/images/backgrounds/main-background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header-text {
@@ -289,8 +293,7 @@ body {
   color: var(--lighter-secondary-text-color);
 }
 
-.footer-contact-element:hover,
-.footer-contact-element:focus {
+.footer-contact-element:hover {
   text-decoration: underline;
 }
 
