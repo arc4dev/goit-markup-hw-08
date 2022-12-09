@@ -46,13 +46,21 @@
         </nav>
         <ul class="contact-list">
           <li class="contact-element">
-            <a class="contact-a hover-effect" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="contact-a hover-effect" href="mailto:info@devstudio.com">
+              <svg width="16" height="12">
+                <use href="/images/svg/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
 
           <li class="contact-element">
-            <a class="contact-a hover-effect" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="contact-a hover-effect" href="tel:+48111111111">
+              <svg width="10" height="16">
+                <use href="/images/svg/icons.svg#icon-phone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
           </li>
         </ul>
       </div>
@@ -228,15 +236,40 @@
     <!-- Footer -->
     <footer class="footer section">
       <div class="footer-container">
-        <a class="logo" href="index.html"
-          ><span class="logo logo-left-side">Web</span
-          ><span class="logo logo-right-side2">Studio</span></a
-        >
         <address class="footer-address-section">
+          <a class="logo footer-logo" href="index.html"
+            ><span class="logo logo-left-side">Web</span
+            ><span class="logo logo-right-side2">Studio</span></a
+          >
           <span class="address">m. Warszawa, Aleje Jerozolimskie 21 </span>
           <a class="footer-contact-element" href="mailto:info@devstudio.com">info@example.com</a>
           <a class="footer-contact-element" href="tel:+48111111111">+48 111 111 111</a>
         </address>
+        <div>
+          <span class="footer-social-header">DOŁĄCZ DO NAS</span>
+          <ul class="footer-social-bar">
+            <li class="footer-social-icon">
+              <svg width="20" height="20">
+                <use href="./images/svg/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="footer-social-icon">
+              <svg width="20" height="20">
+                <use href="./images/svg/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="footer-social-icon">
+              <svg width="20" height="20">
+                <use href="./images/svg/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="footer-social-icon">
+              <svg width="20" height="20">
+                <use href="./images/svg/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
