@@ -8,6 +8,8 @@
   --contact-text-color: rgba(117, 117, 117, 1);
   --secondary-background-color: rgba(47, 48, 58, 1);
   --button-background-color: rgba(245, 244, 250, 1);
+  --base-icon-color: rgba(175, 177, 184, 1);
+  ;
 }
 
 body {
@@ -99,11 +101,14 @@ body {
 .hover-effect:hover,
 .hover-effect:focus {
   color: var(--brand-color);
+  fill: var(--brand-color)
 }
 
 /* HEADER STYLES - CONTACT LIST */
 .contact-a {
   color: var(--contact-text-color);
+  display: flex;
+  gap: 10px;
 }
 
 /* COMMON HEADER STYLES */
@@ -174,6 +179,12 @@ body {
 
 .main-description-element {
   min-width: 270px;
+}
+
+.icon-container {
+  padding: 25px 100px;
+  background-color: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
 }
 
 .main-description-h3 {
@@ -255,6 +266,43 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--description-color);
+}
+
+.team-member-contact-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.team-member-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--base-icon-color);
+}
+
+.team-member-icon:hover {
+  fill: var(--secondary-text-color);
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+
+/* OUR CLIENTS STYLESI */
+
+.clients-list {
+  display: flex;
+  list-style: none;
+}
+
+.client {
+  padding: 17.71px 32px 14.25px 32px;
+  border: 1px solid var(--base-icon-color);
+  fill: var(--base-icon-color);
 }
 
 /* FOOTER STYLES */
@@ -352,6 +400,12 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-bg:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .portfolio-info {
