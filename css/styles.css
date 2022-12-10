@@ -462,7 +462,7 @@ body {
 
 .portfolio-project-type {
   font-size: 1rem;
-  font-size: 1.87;
+  line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--contact-text-color);
 }
