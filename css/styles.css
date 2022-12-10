@@ -313,8 +313,8 @@ body {
 
 /* FOOTER STYLES */
 .footer {
-  min-height: 252px;
   background-color: var(--secondary-background-color);
+  padding: 60px 0px;
 }
 
 .footer-container {
@@ -352,6 +352,10 @@ body {
 
 .footer-contact-element:hover {
   text-decoration: underline;
+}
+
+.footer-social-header-wrapper {
+  margin-top: 12px;
 }
 
 .footer-social-header {
