@@ -24,7 +24,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header-container">
-        <a class="logo" href="index.html"
+        <a class="logo" href="/index.html"
           ><span class="logo logo-left-side">Web</span
           ><span class="logo logo-right-side">Studio</span>
         </a>
@@ -32,11 +32,11 @@
         <nav class="navigation-bar">
           <ul class="navigation-list">
             <li class="navigation-element">
-              <a class="navigation-a hover-effect" href="#">Agencja</a>
+              <a class="navigation-a hover-effect agency-active" href="/index.html">Agencja</a>
             </li>
 
             <li class="navigation-element">
-              <a class="navigation-a hover-effect" href="portfolio.html">Portfolio</a>
+              <a class="navigation-a hover-effect" href="/portfolio.html">Portfolio</a>
             </li>
 
             <li class="navigation-element">
@@ -71,7 +71,7 @@
       <section class="main-header-section section">
         <div class="container">
           <h1 class="main-header-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="main-header-button" type="button">Zamów usługe</button>
+          <button class="main-header-button" type="button" data-modal-open>Zamów usługe</button>
         </div>
       </section>
       <!-- Main description section -->
@@ -405,5 +405,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>&times;</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
