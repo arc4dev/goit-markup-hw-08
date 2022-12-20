@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>GOIT #3</title>
+    <title>WebStudio</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -408,6 +408,38 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <h2>Zostaw swoje dane w formularzu poniżej</h2>
+          <div role="group" class="fieldset">
+            <label>
+              <div class="fieldset-heading">Imie</div>
+              <input type="text" name="first-name" />
+            </label>
+            <label>
+              <div class="fieldset-heading">Telefon</div>
+              <input type="tel" name="phone-number" />
+            </label>
+            <label>
+              <div class="fieldset-heading">Email</div>
+              <input type="email" name="email" />
+            </label>
+            <label>
+              <div class="fieldset-heading">Komentarz</div>
+              <textarea name="comment" placeholder="Wprowadź tekst"></textarea>
+            </label>
+          </div>
+          <label id="terms">
+            <input type="checkbox" name="terms-conditions" />
+            <p>
+              Oświadczam iż akceptuję <a href="" class="link-color">Regulamin </a> i
+              <a class="link-color" href=""> Politykę Prywatności. </a>
+            </p>
+          </label>
+          <div class="form-button-wrapper">
+            <button id="submit-button" type="submit">Wyślij</button>
+          </div>
+        </form>
+
         <button type="button" class="close-button" data-modal-close>&times;</button>
       </div>
     </div>
