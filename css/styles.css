@@ -20,6 +20,13 @@ body {
   margin: 0;
 }
 
+form,
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
 ul {
   list-style: none;
 }
@@ -146,6 +153,14 @@ ul {
 
 .form label {
   color: var(--description-color);
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 15px;
 }
 
 .fieldset-heading {
@@ -155,11 +170,11 @@ ul {
   margin-bottom: 4px;
 }
 
-.form input {
+.form input:not(input[type="checkbox"]) {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px 0;
+  padding: 12px 42px;
 }
 
 .form input:focus,
@@ -201,6 +216,7 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 #terms {
@@ -211,6 +227,29 @@ ul {
   font-size: 0.875rem;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+#terms input[type="checkbox"] {
+  background: #fff;
+  margin: 0;
+  appearance: none;
+  border: 2px solid #000;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  transition: background-color 250ms var(--transition-tempo),
+    border-color 250ms var(--transition-tempo);
+}
+
+#terms input[type="checkbox"]:checked {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+#agree-icon {
+  position: absolute;
+  left: 15.5px;
 }
 
 /* HEADER STYLES */
