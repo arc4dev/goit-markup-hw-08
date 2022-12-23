@@ -299,19 +299,21 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer section">
+    <footer class="footer">
       <div class="footer-container">
         <address class="footer-address-section">
-          <a class="logo footer-logo" href="index.html"
-            ><span class="logo logo-left-side">Web</span
-            ><span class="logo logo-right-side2">Studio</span></a
-          >
+          <a class="logo footer-logo" href="index.html">
+            <span class="logo logo-left-side">Web</span>
+            <span class="logo logo-right-side2">Studio</span>
+          </a>
           <span class="address">m. Warszawa, Aleje Jerozolimskie 21 </span>
           <a class="footer-contact-element" href="mailto:info@devstudio.com">info@example.com</a>
           <a class="footer-contact-element" href="tel:+48111111111">+48 111 111 111</a>
         </address>
         <div>
-          <span class="footer-social-header">DOŁĄCZ DO NAS</span>
+          <div class="footer-social-header-wrapper">
+            <span class="footer-social-header">DOŁĄCZ DO NAS</span>
+          </div>
           <ul class="footer-social-bar">
             <li class="footer-social-icon">
               <svg width="20" height="20">
@@ -335,6 +337,17 @@
             </li>
           </ul>
         </div>
+
+        <form class="newsletter-form">
+          <h3>Zapisz się do newslettera</h3>
+          <input type="email" name="email" placeholder="E-mail" />
+          <button type="submit" name="submit">
+            <div class="newsletter-button-wrapper">
+              <div class="newsletter-register-text">Zapisz się</div>
+              <img width="24" height="24" src="./images/svg/icon-send.svg" alt="" />
+            </div>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
