@@ -161,6 +161,7 @@ ul {
   top: 50%;
   bottom: 50%;
   left: 15px;
+  transition: fill 250ms var(--transition-tempo);
 }
 
 .fieldset__heading {
@@ -177,6 +178,7 @@ ul {
 
 .form__input,
 .form__textarea {
+  transition: border-color 250ms var(--transition-tempo);
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
