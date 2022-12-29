@@ -1,4 +1,4 @@
-/* GLOBAL VARIABLES */
+/* --- GLOBAL VARIABLES --- */
 :root {
   --brand-color: rgba(33, 150, 243, 1);
   --base-text-color: rgba(33, 33, 33, 1);
@@ -12,6 +12,7 @@
   --button-background-color: rgba(245, 244, 250, 1);
   --base-icon-color: rgba(175, 177, 184, 1);
   --transition-tempo: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
 }
 
 body {
@@ -62,7 +63,6 @@ ul {
   margin-bottom: -94px;
 }
 
-/* COMMON STYLES */
 .navigation-link,
 .contact-link,
 .footer__contact-item {
@@ -70,7 +70,7 @@ ul {
   font-size: 0.875rem;
 }
 
-/* MODAL WINDOW STYLES */
+/* --- MODAL WINDOW STYLES --- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -81,7 +81,8 @@ ul {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--transition-tempo), transform 250ms var(--transition-tempo);
+  transition: opacity var(--transition-duration) var(--transition-tempo),
+    transform var(--transition-duration) var(--transition-tempo);
 }
 
 .modal {
@@ -92,7 +93,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms var(--transition-tempo);
+  transition: transform var(--transition-duration) var(--transition-tempo);
   transform: scale(1);
 }
 
@@ -161,7 +162,7 @@ ul {
   top: 50%;
   bottom: 50%;
   left: 15px;
-  transition: fill 250ms var(--transition-tempo);
+  transition: fill var(--transition-duration) var(--transition-tempo);
 }
 
 .fieldset__heading {
@@ -178,7 +179,7 @@ ul {
 
 .form__input,
 .form__textarea {
-  transition: border-color 250ms var(--transition-tempo);
+  transition: border-color var(--transition-duration) var(--transition-tempo);
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -247,8 +248,8 @@ ul {
   height: 15px;
   border-radius: 2px;
   position: relative;
-  transition: background-color 250ms var(--transition-tempo),
-    border-color 250ms var(--transition-tempo);
+  transition: background-color var(--transition-duration) var(--transition-tempo),
+    border-color var(--transition-duration) var(--transition-tempo);
 }
 
 .terms__input:checked {
@@ -261,7 +262,7 @@ ul {
   left: 15.5px;
 }
 
-/* HEADER STYLES */
+/* --- HEADER STYLES --- */
 .header {
   padding: 24px 0px 25px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
@@ -325,7 +326,8 @@ ul {
 }
 
 .hover-effect {
-  transition: color 250ms var(--transition-tempo), fill 250ms var(--transition-tempo);
+  transition: color var(--transition-duration) var(--transition-tempo),
+    fill var(--transition-duration) var(--transition-tempo);
 }
 
 .hover-effect:hover,
@@ -334,14 +336,13 @@ ul {
   fill: var(--brand-color);
 }
 
-/* HEADER STYLES - CONTACT LIST */
 .contact-link {
   color: var(--contact-text-color);
   display: flex;
   gap: 10px;
 }
 
-/* COMMON HEADER STYLES */
+/* --- COMMON HEADER STYLES --- */
 
 .navigation-link,
 .contact-link {
@@ -362,7 +363,7 @@ ul {
   margin-right: 345px;
 }
 
-/* MAIN HEADER STYLES */
+/* --- MAIN HEADER STYLES --- */
 .main-header-section {
   min-height: 600px;
   max-width: 1600px;
@@ -388,7 +389,6 @@ ul {
 }
 
 .main-header__button {
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 1em;
   line-height: 1.88;
@@ -402,7 +402,7 @@ ul {
   border-radius: 4px;
 }
 
-/* ASSETS SECTION STYLES */
+/* --- ASSETS SECTION STYLES --- */
 
 .assets-section__list {
   width: 1170px;
@@ -435,7 +435,7 @@ ul {
   color: var(--contact-text-color);
 }
 
-/* SERVICES STYLES */
+/* --- SERVICES STYLES --- */
 .services-section {
   min-height: 386px;
 }
@@ -465,7 +465,7 @@ ul {
   line-height: 1.14;
 }
 
-/* TEAM CARDS STYLES */
+/* --- TEAM CARDS STYLES --- */
 .team-section {
   background-color: rgba(245, 244, 250, 1);
 }
@@ -521,7 +521,8 @@ ul {
   align-items: center;
   border-radius: 50%;
   fill: var(--base-icon-color);
-  transition: fill 250ms var(--transition-tempo), background-color 250ms var(--transition-tempo);
+  transition: fill var(--transition-duration) var(--transition-tempo),
+    background-color var(--transition-duration) var(--transition-tempo);
 }
 
 .team-section__contact-bar-logo:hover {
@@ -547,7 +548,8 @@ ul {
   border: 1px solid var(--base-icon-color);
   border-radius: 4px;
   fill: var(--base-icon-color);
-  transition: fill 250ms var(--transition-tempo), border-color 250ms var(--transition-tempo);
+  transition: fill var(--transition-duration) var(--transition-tempo),
+    border-color var(--transition-duration) var(--transition-tempo);
 }
 
 .clients-section__client:hover {
@@ -556,7 +558,7 @@ ul {
   cursor: pointer;
 }
 
-/* FOOTER STYLES */
+/* --- FOOTER STYLES ---*/
 .footer {
   background-color: var(--secondary-background-color);
   padding: 60px 0px;
@@ -627,7 +629,7 @@ ul {
   border-radius: 50%;
   fill: var(--button-background-color);
   background-color: var(--icon-background-color);
-  transition: background-color 250ms var(--transition-tempo);
+  transition: background-color var(--transition-duration) var(--transition-tempo);
 }
 
 .footer__social-bar-list-logo:hover {
@@ -697,7 +699,7 @@ ul {
 ------------|
 */
 
-/* BUTTON-FILTER STYLES */
+/* --- BUTTON-FILTER STYLES --- */
 .button-filter-list {
   display: flex;
   justify-content: center;
@@ -706,7 +708,6 @@ ul {
 }
 
 .button-filter {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.62;
@@ -716,8 +717,9 @@ ul {
   border-style: none;
   color: var(--base-text-color);
   background-color: var(--button-background-color);
-  transition: color 250ms var(--transition-tempo), background-color 250ms var(--transition-tempo),
-    box-shadow 250ms var(--transition-tempo);
+  transition: color var(--transition-duration) var(--transition-tempo),
+    background-color var(--transition-duration) var(--transition-tempo),
+    box-shadow var(--transition-duration) var(--transition-tempo);
 }
 
 .button-filter:hover,
@@ -740,7 +742,7 @@ ul {
 .portfolio-section__bg {
   width: 100%;
   height: 100%;
-  transition: box-shadow 250ms var(--transition-tempo);
+  transition: box-shadow var(--transition-duration) var(--transition-tempo);
 }
 
 .portfolio-section__bg:hover {
@@ -767,7 +769,7 @@ ul {
   color: var(--secondary-text-color);
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms var(--transition-tempo);
+  transition: transform var(--transition-duration) var(--transition-tempo);
 }
 
 .portfolio-section__list-item:hover .portfolio-section__overlay {
