@@ -1,0 +1,32 @@
+.assets-section {
+  &__list {
+    width: 1170px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__header {
+    font-size: 0.875rem;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    min-height: 75px;
+    color: $contact-text-color;
+  }
+
+  &__list-item {
+    min-width: 270px;
+  }
+}
+
+.icon-container {
+  padding: 25px 100px;
+  background-color: $button-background-color;
+  margin-bottom: 30px;
+}

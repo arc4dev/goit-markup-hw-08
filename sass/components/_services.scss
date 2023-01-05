@@ -1,0 +1,28 @@
+.services-section {
+  min-height: 386px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    &-item {
+      position: relative;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 27px 0px;
+    background: rgba(47, 48, 58, 0.8);
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+  }
+}

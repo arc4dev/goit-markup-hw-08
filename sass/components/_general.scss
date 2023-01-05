@@ -1,0 +1,54 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: $base-text-color;
+  margin: 0;
+}
+
+form,
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.section-header {
+  font-size: 2.25rem;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-section {
+  margin-bottom: -94px;
+}
+
+.navigation-link,
+.contact-link,
+.footer__contact-item {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
