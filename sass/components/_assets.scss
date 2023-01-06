@@ -1,8 +1,16 @@
 .assets-section {
+  &__container {
+    @extend .container;
+  }
+
   &__list {
     width: 1170px;
     display: flex;
     gap: 30px;
+  }
+
+  &__item {
+    min-width: 270px;
   }
 
   &__header {
@@ -18,10 +26,6 @@
     letter-spacing: 0.03em;
     min-height: 75px;
     color: $contact-text-color;
-  }
-
-  &__list-item {
-    min-width: 270px;
   }
 }
 

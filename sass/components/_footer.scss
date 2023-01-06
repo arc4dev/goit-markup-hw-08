@@ -5,6 +5,10 @@
 
   &__logo {
     padding-bottom: 21px;
+
+    &--right-side {
+      color: $secondary-text-color;
+    }
   }
 
   &__address {
@@ -32,41 +36,6 @@
     }
   }
 
-  &__social-bar-list {
-    display: flex;
-    padding-top: 20px;
-    gap: 10px;
-
-    &-logo {
-      width: 44px;
-      height: 44px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      fill: $button-background-color;
-      background-color: $icon-background-color;
-      transition: background-color $transition-duration $transition-tempo;
-
-      &:hover {
-        background-color: $brand-color;
-        cursor: pointer;
-      }
-    }
-  }
-
-  &-social-header {
-    color: $secondary-text-color;
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 1rem;
-    letter-spacing: 0.03em;
-  }
-
-  &__social-bar-wrapper {
-    margin-top: 12px;
-  }
-
   &-container {
     width: 1200px;
     padding: 0px 15px;
@@ -74,6 +43,43 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
+  }
+}
+
+.social-bar {
+  &__list {
+    display: flex;
+    padding-top: 20px;
+    gap: 10px;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: $button-background-color;
+    background-color: $icon-background-color;
+    transition: background-color $transition-duration $transition-tempo;
+
+    &:hover {
+      background-color: $brand-color;
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.03em;
+  }
+
+  &-wrapper {
+    margin-top: 12px;
   }
 }
 
@@ -128,11 +134,11 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
   }
-}
 
-.newsletter-button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+  &-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 }

@@ -1,6 +1,10 @@
 .team-section {
   background-color: $button-background-color;
 
+  &__container {
+    @extend .container;
+  }
+
   &__list {
     width: 1170px;
     min-height: 368px;
@@ -35,30 +39,30 @@
     letter-spacing: 0.03em;
     color: $description-color;
   }
+}
 
-  &__contact-bar {
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+
+  &__item {
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
-    margin-bottom: 30px;
+    align-items: center;
+    border-radius: 50%;
+    fill: $base-icon-color;
+    transition: fill $transition-duration $transition-tempo,
+      background-color $transition-duration $transition-tempo;
 
-    &-logo {
-      width: 44px;
-      height: 44px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      fill: $base-icon-color;
-      transition: fill $transition-duration $transition-tempo,
-        background-color v$transition-duration $transition-tempo;
-
-      &:hover {
-        fill: $secondary-text-color;
-        background-color: $brand-color;
-        cursor: pointer;
-      }
+    &:hover {
+      fill: $secondary-text-color;
+      background-color: $brand-color;
+      cursor: pointer;
     }
   }
 }

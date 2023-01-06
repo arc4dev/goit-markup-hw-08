@@ -1,13 +1,17 @@
 .services-section {
   min-height: 386px;
 
+  &__container {
+    @extend .container;
+  }
+
   &__list {
     display: flex;
     gap: 30px;
+  }
 
-    &-item {
-      position: relative;
-    }
+  &__item {
+    position: relative;
   }
 
   &__label {

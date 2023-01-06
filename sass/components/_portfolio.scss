@@ -30,14 +30,18 @@
 }
 
 .portfolio-section {
+  &__container {
+    @extend .container;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 370px 370px 370px;
     gap: 30px;
+  }
 
-    &-item:hover .portfolio-section__overlay {
-      transform: translateY(0);
-    }
+  &__item:hover .portfolio-section__overlay {
+    transform: translateY(0);
   }
 
   &__bg {
