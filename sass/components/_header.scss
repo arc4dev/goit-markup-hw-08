@@ -3,6 +3,7 @@
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 
   &__container {
+    @extend .container;
     flex-direction: row;
   }
 }
