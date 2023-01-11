@@ -39,6 +39,11 @@
   cursor: pointer;
   background-color: $secondary-text-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color $transition-duration $transition-tempo;
+
+  &:hover {
+    color: $brand-color;
+  }
 }
 
 .is-hidden {

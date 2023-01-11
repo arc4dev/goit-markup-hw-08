@@ -9,12 +9,13 @@
 
   &__list {
     display: flex;
-    justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   &__client {
+    max-width: 210px;
     border: 1px solid $base-icon-color;
     border-radius: 4px;
     fill: $base-icon-color;
@@ -26,5 +27,11 @@
       border-color: $brand-color;
       cursor: pointer;
     }
+  }
+
+  &__icon {
+    // width: 170px; desktop
+    width: 210px;
+    height: 92px;
   }
 }

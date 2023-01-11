@@ -5,6 +5,7 @@
   &__container {
     @extend .container;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -36,6 +37,7 @@
 }
 
 .navigation {
+  display: none;
   &__list {
     display: flex;
     gap: 46px;
@@ -70,7 +72,8 @@
 }
 
 .contact-list {
-  display: flex;
+  display: none;
+  // display: flex; desktop
   gap: 50px;
 
   &__link {
@@ -81,5 +84,15 @@
     color: $contact-text-color;
     display: flex;
     gap: 10px;
+  }
+}
+
+.menu-icon {
+  transition: fill $transition-duration $transition-tempo;
+
+  &:hover,
+  &:focus {
+    fill: $brand-color;
+    cursor: pointer;
   }
 }

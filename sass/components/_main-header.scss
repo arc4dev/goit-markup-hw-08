@@ -1,6 +1,5 @@
 .main-header-section {
   min-height: 600px;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: $secondary-background-color;
   display: flex;
@@ -11,11 +10,14 @@
   background-size: cover;
 
   &__text {
-    width: 696px;
+    // width: 696px; desktop
+    width: 365px;
     color: $secondary-text-color;
     font-weight: 900;
-    font-size: 2.75rem;
-    line-height: 1.36;
+    // font-size: 2.75rem; desktop
+    font-size: 1.625rem;
+    // line-height: 1.36; desktop
+    line-height: 1.62;
     letter-spacing: 0.06em;
     padding-bottom: 30px;
     text-align: center;
@@ -23,7 +25,7 @@
 
   &__button {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: $secondary-text-color;

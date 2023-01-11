@@ -21,12 +21,20 @@ ul {
   border: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
-  padding: 94px 0px;
+  // padding: 94px 0px; desktop
+  padding: 60px 0px;
 }
 
 .section-header {
-  font-size: 2.25rem;
+  // font-size: 2.25rem; desktop
+  font-size: 1.75rem;
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -34,8 +42,9 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+  width: 480px;
   margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +52,8 @@ ul {
 }
 
 .margin-section {
-  margin-bottom: -94px;
+  // margin-bottom: -94px; desktop
+  margin-bottom: -34px;
 }
 
 .navigation__link,

@@ -21,7 +21,7 @@
       font-style: normal;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 9px;
     }
   }
@@ -37,18 +37,23 @@
   }
 
   &__container {
-    max-width: 1200px;
+    width: 480px;
     padding: 0px 15px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 70px;
+    // gap: 70px; destop
+    gap: 60px;
   }
 }
 
 .social-bar {
+  text-align: center; //new
+
   &__list {
-    display: flex;
+    display: flex; //new
+    justify-content: center;
     padding-top: 20px;
     gap: 10px;
   }
@@ -85,12 +90,16 @@
 
 // Newsletter group
 .newsletter-form {
-  padding-top: 12px;
+  // padding-top: 12px; desktop
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-color: $secondary-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 
   & h3 {
     color: $secondary-text-color;
@@ -99,19 +108,18 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 20px;
   }
 
   & input {
     outline: none;
-    width: 358px;
+    width: 100%;
     color: $secondary-text-color;
     background: transparent;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 12px;
+    // margin-right: 12px; desktop
 
     &:focus {
       border-color: $secondary-text-color;
