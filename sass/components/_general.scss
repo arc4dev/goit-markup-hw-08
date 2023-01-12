@@ -28,17 +28,16 @@ img {
 }
 
 .section {
-  // padding: 94px 0px; desktop
   padding: 60px 0px;
 }
 
 .section-header {
-  // font-size: 2.25rem; desktop
   font-size: 1.75rem;
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
+  transition: all $transition-duration $transition-tempo;
 }
 
 .container {
@@ -49,10 +48,10 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all $transition-duration $transition-tempo;
 }
 
 .margin-section {
-  // margin-bottom: -94px; desktop
   margin-bottom: -34px;
 }
 
@@ -61,4 +60,31 @@ img {
 .footer__contact-item {
   text-decoration: none;
   font-size: 0.875rem;
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0;
+  }
+
+  .section {
+    padding: 94px 0px;
+
+    &-header {
+      font-size: 2.25rem;
+    }
+  }
+
+  .margin-section {
+    margin-bottom: -94px;
+  }
 }

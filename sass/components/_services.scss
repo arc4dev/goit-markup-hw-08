@@ -32,3 +32,9 @@
     line-height: 1.14;
   }
 }
+
+@media (min-width: 1200px) {
+  .services-section {
+    display: block;
+  }
+}

@@ -6,6 +6,7 @@
     @extend .container;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -39,10 +40,9 @@
 .navigation {
   display: none;
   &__list {
+    transition: all $transition-duration $transition-tempo;
     display: flex;
     gap: 46px;
-    margin-left: 93px;
-    margin-right: 345px;
   }
 
   &__link {
@@ -61,7 +61,7 @@
         content: "";
         display: block;
         position: absolute;
-        bottom: -34px;
+        bottom: -38px;
         width: 100%;
         height: 4px;
         border-radius: 2px;
@@ -73,8 +73,7 @@
 
 .contact-list {
   display: none;
-  // display: flex; desktop
-  gap: 50px;
+  gap: 10px;
 
   &__link {
     @extend .hover-effect;
@@ -87,12 +86,162 @@
   }
 }
 
-.menu-icon {
-  transition: fill $transition-duration $transition-tempo;
+.menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  transform: translateX(100vw);
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  transition: transform $transition-duration $transition-tempo;
 
-  &:hover,
-  &:focus {
-    fill: $brand-color;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  &.is-open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  &__toggle {
+    background-color: inherit;
+
+    &-close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      background-color: inherit;
+      width: 40px;
+      height: 40px;
+      font-size: 2.5rem;
+      font-weight: normal;
+      transition: color $transition-duration $transition-tempo;
+
+      &:hover,
+      &:focus {
+        color: $brand-color;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__link {
+    color: inherit;
+    font-size: 2.5rem;
+    line-height: 1.175;
+    text-decoration: none;
+    transition: color $transition-duration $transition-tempo;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+
+    &--active {
+      color: $brand-color;
+    }
+  }
+
+  &__contact {
+    font-size: 1.5rem;
+    line-height: 1.16;
+    color: $contact-text-color;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &-list {
+      margin-top: 302px;
+      margin-bottom: 64px;
+    }
+
+    &--phone {
+      font-size: 2.125rem;
+      line-height: 1.17;
+      color: $brand-color;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__social-bar {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social {
+    &-link {
+      font-size: 1.125rem;
+      line-height: 1.22;
+      color: $brand-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__icon {
+    transition: fill $transition-duration $transition-tempo;
+
+    &:hover,
+    &:focus {
+      fill: $brand-color;
+      cursor: pointer;
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .menu {
+    &__icon {
+      display: none;
+    }
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  .contact-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .navigation {
+    &__list {
+      margin-right: 345px;
+    }
+
+    &__link {
+      &::after {
+        bottom: -33px;
+      }
+    }
   }
 }

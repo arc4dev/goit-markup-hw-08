@@ -11,16 +11,18 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 
   &__client {
-    max-width: 210px;
+    width: 210px;
     border: 1px solid $base-icon-color;
     border-radius: 4px;
     fill: $base-icon-color;
     transition: fill $transition-duration $transition-tempo,
-      border-color $transition-duration $transition-tempo;
+      border-color $transition-duration $transition-tempo,
+      width $transition-duration $transition-tempo;
 
     &:hover {
       fill: $brand-color;
@@ -30,8 +32,34 @@
   }
 
   &__icon {
-    // width: 170px; desktop
+    transition: width $transition-duration $transition-tempo;
     width: 210px;
     height: 92px;
+  }
+}
+
+// Laptop
+@media (min-width: 768px) {
+  .clients-section {
+    &__client {
+      width: 225px;
+    }
+
+    &__icon {
+      width: 225px;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  .clients-section {
+    &__client {
+      width: 170px;
+    }
+
+    &__icon {
+      width: 170px;
+    }
   }
 }

@@ -64,10 +64,11 @@
             </a>
           </li>
         </ul>
-
-        <svg class="menu-icon" width="40" height="40">
-          <use href="./images/svg/icons.svg#icon-menu"></use>
-        </svg>
+        <button class="menu__toggle js-open-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/svg/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- MAIN SECTION -->
@@ -193,9 +194,13 @@
               <figure class="team-section__card-background">
                 <img
                   src="images/team/person-1.jpg"
+                  srcset="
+                    images/team/person-1.jpg         450w,
+                    images/team/person-1-laptop.jpg  354w,
+                    images/team/person-1-desktop.jpg 270w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
                   alt="dorosły człowiek z brodą i okularami"
-                  width="450"
-                  height="460"
                 />
                 <figcaption class="team-section__member-info">
                   <div class="team-section__member-name">John Doe</div>
@@ -230,9 +235,13 @@
               <figure class="team-section__card-background">
                 <img
                   src="images/team/person-2.jpg"
+                  srcset="
+                    images/team/person-2.jpg         450w,
+                    images/team/person-2-laptop.jpg  354w,
+                    images/team/person-2-desktop.jpg 270w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
                   alt="młoda kobieta z okularami i włosami o kolorze blond"
-                  width="450"
-                  height="460"
                 />
                 <figcaption class="team-section__member-info">
                   <div class="team-section__member-name">John Doe</div>
@@ -265,7 +274,16 @@
 
             <li class="team-section__card">
               <figure class="team-section__card-background">
-                <img src="images/team/person-3.jpg" alt="młody człowiek" width="450" height="460" />
+                <img
+                  src="images/team/person-3.jpg"
+                  srcset="
+                    images/team/person-3.jpg         450w,
+                    images/team/person-3-laptop.jpg  354w,
+                    images/team/person-3-desktop.jpg 270w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                  alt="młody człowiek"
+                />
                 <figcaption class="team-section__member-info">
                   <div class="team-section__member-name">John Doe</div>
                   <div class="team-section__member-role">Marketing</div>
@@ -299,9 +317,13 @@
               <figure class="team-section__card-background">
                 <img
                   src="images/team/person-4.jpg"
+                  srcset="
+                    images/team/person-4.jpg         450w,
+                    images/team/person-4-laptop.jpg  354w,
+                    images/team/person-4-desktop.jpg 270w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
                   alt="młody człowiek z okularami"
-                  width="450"
-                  height="460"
                 />
                 <figcaption class="team-section__member-info">
                   <div class="team-section__member-name">John Doe</div>
@@ -377,54 +399,59 @@
     <footer class="footer">
       <div class="footer__container">
         <!-- Adress section -->
-        <address class="footer__address-section">
-          <a class="logo footer__logo" href="index.html">
-            <span class="logo logo--left-side">Web</span>
-            <span class="logo footer__logo--right-side">Studio</span>
-          </a>
-          <span class="footer__address">m. Warszawa, Aleje Jerozolimskie 21 </span>
-          <a class="footer__contact-item" href="mailto:info@devstudio.com">info@example.com</a>
-          <a class="footer__contact-item" href="tel:+48111111111">+48 111 111 111</a>
-        </address>
-        <!-- Social bar -->
-        <div class="social-bar">
-          <span class="social-bar__header">DOŁĄCZ DO NAS</span>
-          <ul class="social-bar__list">
-            <li class="social-bar__item">
-              <svg width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-instagram"></use>
-              </svg>
-            </li>
-            <li class="social-bar__item">
-              <svg width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-twitter"></use>
-              </svg>
-            </li>
-            <li class="social-bar__item">
-              <svg width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="social-bar__item">
-              <svg width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
+        <div class="footer-wrapper">
+          <address class="footer__address-section">
+            <a class="logo footer__logo" href="index.html">
+              <span class="logo logo--left-side">Web</span>
+              <span class="logo footer__logo--right-side">Studio</span>
+            </a>
+            <span class="footer__address">m. Warszawa, Aleje Jerozolimskie 21 </span>
+            <a class="footer__contact-item" href="mailto:info@devstudio.com">info@example.com</a>
+            <a class="footer__contact-item" href="tel:+48111111111">+48 111 111 111</a>
+          </address>
+          <!-- Social bar -->
+          <div class="social-bar">
+            <span class="social-bar__header">DOŁĄCZ DO NAS</span>
+            <ul class="social-bar__list">
+              <li class="social-bar__item">
+                <svg width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="social-bar__item">
+                <svg width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="social-bar__item">
+                <svg width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="social-bar__item">
+                <svg width="20" height="20">
+                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Newsletter form -->
         <form class="newsletter-form">
-          <h3>Zapisz się do newslettera</h3>
-          <input type="email" name="email" placeholder="E-mail" />
-          <button type="submit" name="submit">
-            <div class="newsletter-form-button-wrapper">
-              <div class="newsletter-register-text">Zapisz się</div>
-              <img width="24" height="24" src="./images/svg/icon-send.svg" alt="" />
-            </div>
-          </button>
+          <h3 class="newsletter-form__header">Zapisz się do newslettera</h3>
+          <div class="newsletter-form-wrapper">
+            <input class="newsletter-form__input" type="email" name="email" placeholder="E-mail" />
+            <button type="submit" name="submit">
+              <div class="newsletter-form-button-wrapper">
+                <div>Zapisz się</div>
+                <img width="24" height="24" src="./images/svg/icon-send.svg" alt="" />
+              </div>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
+
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -484,6 +511,44 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu js-menu-container">
+      <button class="menu__toggle-close js-close-menu">&times;</button>
+
+      <ul class="menu__nav">
+        <li class="menu__item">
+          <a class="menu__link menu__link--active" href="index.html">Agencja</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="menu__contact-list">
+        <li class="menu__contact menu__contact--phone" href="tel:+48111111111">+48 111 111 111</li>
+        <li class="menu__contact" href="mailto:info@devstudio.com">info@devstudio.com</li>
+      </ul>
+
+      <ul class="menu__social-bar">
+        <li class="menu__social">
+          <a class="menu__social-link" href="#">Instagram</a>
+        </li>
+        <li class="menu__social">
+          <a class="menu__social-link" href="#">Twitter</a>
+        </li>
+        <li class="menu__social">
+          <a class="menu__social-link" href="#">Facebook</a>
+        </li>
+        <li class="menu__social-link" class="menu__social">
+          <a class="menu__social-link" href="#">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

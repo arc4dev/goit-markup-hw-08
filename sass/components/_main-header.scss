@@ -1,26 +1,25 @@
 .main-header-section {
-  min-height: 600px;
+  min-height: 400px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: $secondary-background-color;
   display: flex;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/backgrounds/main-background-image.jpg");
+  background-image: $background-gradient, url("../images/backgrounds/main-background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all $transition-duration $transition-tempo;
 
   &__text {
-    // width: 696px; desktop
     width: 365px;
     color: $secondary-text-color;
     font-weight: 900;
-    // font-size: 2.75rem; desktop
     font-size: 1.625rem;
-    // line-height: 1.36; desktop
     line-height: 1.62;
     letter-spacing: 0.06em;
     padding-bottom: 30px;
     text-align: center;
+    transition: all $transition-duration $transition-tempo;
   }
 
   &__button {
@@ -35,5 +34,49 @@
     border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) {
+  .main-header-section {
+    background-image: $background-gradient,
+      url("../images/backgrounds/main-background-image2x@2x.jpg");
+  }
+}
+
+// Laptop
+@media (min-width: 768px) {
+  .main-header-section {
+    background-image: $background-gradient,
+      url("../images/backgrounds/main-background-image-laptop.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2) {
+    .main-header-section {
+      background-image: $background-gradient,
+        url("../images/backgrounds/main-background-image-laptop2x@2x.jpg");
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  .main-header-section {
+    min-height: 600px;
+    background-image: $background-gradient,
+      url("../images/backgrounds/main-background-image-desktop.jpg");
+
+    &__text {
+      width: 696px;
+      font-size: 2.75rem;
+      line-height: 1.36;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) {
+    .main-header-section {
+      background-image: $background-gradient,
+        url("../images/backgrounds/main-background-image-desktop2x@2x.jpg");
+    }
   }
 }
