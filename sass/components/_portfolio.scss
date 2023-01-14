@@ -44,7 +44,6 @@
   &__item:hover .portfolio-section__overlay {
     transform: translateY(0);
   }
-
   &__bg {
     transition: box-shadow $transition-duration $transition-tempo;
 
@@ -76,7 +75,6 @@
   }
 
   &__info {
-    width: 100%;
     border: 1px solid #eeeeee;
     padding: 20px 24px;
   }
@@ -95,5 +93,23 @@
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: $contact-text-color;
+  }
+}
+
+// Laptop
+@media (min-width: 768px) {
+  .portfolio-section {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  .portfolio-section {
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }

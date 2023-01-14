@@ -12,6 +12,7 @@
   }
 
   &__address {
+    text-align: center;
     color: $secondary-text-color;
     font-size: 0.875rem;
     line-height: 1.71;
@@ -43,7 +44,7 @@
   }
 
   &__container {
-    width: 480px;
+    max-width: 480px;
     padding: 0px 15px;
     margin: 0 auto;
     display: flex;
@@ -95,7 +96,6 @@
 
 // Newsletter group
 .newsletter-form {
-  // padding-top: 12px; desktop
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.88;
@@ -165,7 +165,7 @@
 @media (min-width: 768px) {
   .footer {
     &__container {
-      width: 768px;
+      max-width: 768px;
       padding: 0 76px;
     }
 
@@ -186,7 +186,7 @@
 @media (min-width: 1200px) {
   .footer {
     &__container {
-      width: 1200px;
+      max-width: 1200px;
       padding: 0;
       flex-direction: row;
     }
@@ -198,6 +198,7 @@
   }
 
   .newsletter-form {
+    padding-top: 8px;
     flex-direction: column;
     align-items: flex-start;
 
@@ -209,5 +210,9 @@
     &__input {
       width: 358px;
     }
+  }
+
+  .social-bar {
+    padding-top: 8px;
   }
 }
