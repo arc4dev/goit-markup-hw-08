@@ -194,5 +194,17 @@
 
 .agree-icon {
   position: absolute;
-  left: 15.5px;
+  left: 1px;
+}
+
+// Desktop
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+
+  .agree-icon {
+    left: 15.5px;
+  }
 }
